@@ -45,7 +45,7 @@ def MotionDetection(video):
                 isValid = ColorDetection(extractedContour)
                 if isValid:
                     cv2.rectangle(frame, (x - 1, y - 1), (x + w + 1, y + h + 1), (0, 255, 0), 2)
-                    cv2.putText(frame, "Status: {}".format('Color Detected'), (20, 25), cv2.FONT_HERSHEY_SIMPLEX,1, (0, 0, 255), 2)
+                    cv2.putText(frame, "Status: {}".format('Detected'), (20, 25), cv2.FONT_HERSHEY_SIMPLEX,1, (0, 0, 255), 2)
 
             # Displaying color frame with contour of motion of object
             cv2.imshow("Bacteria Detection [Press X to Exit]", frame)
