@@ -58,7 +58,7 @@ with c2:
 
 hide_streamlit_style = """
             <style>
-            #MainMenu {visibility: hidden;}
+           
             footer {visibility: visible;}
             footer:after{
                 content:'Copyright @ 2022';
